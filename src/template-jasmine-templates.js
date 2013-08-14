@@ -1,18 +1,5 @@
 "use strict";
 
-// from https://github.com/jsoverson/grunt-template-jasmine-requirejs/blob/master/src/template-jasmine-requirejs.js
-function filterGlobPatterns(scripts) {
-  Object.keys(scripts).forEach(function (group) {
-    if (Array.isArray(scripts[group])) {
-      scripts[group] = scripts[group].filter(function(script) {
-        return script.indexOf('*') === -1;
-      });
-    } else {
-      scripts[group] = [];
-    }
-  });
-}
-
 exports.process = function(grunt, task, context) {
 
   // node libraries
@@ -37,7 +24,6 @@ exports.process = function(grunt, task, context) {
     context.templates = getFileList(tmpl).map(function(element, index) {
       return {uid:path.basename(element, ".tmpl")+"_tmpl", content:fs.readFileSync(path.resolve(element)).toString()};
     });
-    console.log(context.templates);
   }
 
   var source = grunt.file.read(templates);
@@ -69,3 +55,16 @@ exports.process = function(grunt, task, context) {
     return files;
   };
 };
+
+// from https://github.com/jsoverson/grunt-template-jasmine-requirejs/blob/master/src/template-jasmine-requirejs.js
+function filterGlobPatterns(scripts) {
+  Object.keys(scripts).forEach(function (group) {
+    if (Array.isArray(scripts[group])) {
+      scripts[group] = scripts[group].filter(function(script) {
+        return script.indexOf('*') === -1;
+      });
+    } else {
+      scripts[group] = [];
+    }
+  });
+}

@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 
     jasmine: {
       handlebars: {
-        src: 'test/src/**/*.js',
+        src: 'test/src/**/*s.js',
         options: {
           keepRunner: true,
           specs: 'test/spec/**/*Spec.js',
