@@ -1,7 +1,7 @@
 {
-  "name": "grunt-template-jasmine-handlebars",
+  "name": "grunt-template-jasmine-templates",
   "version": "0.0.1",
-  "description": "Allows for handlebarsjs/underscore templates to be implemented in the _SpecRunner.html",
+  "description": "Allows for javascript template engines to be used within jasmine",
   "keywords": [
     "grunt",
     "template",
@@ -25,6 +25,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stilva/grunt-template-jasmine-handlebars.git"
+    "url": "https://github.com/stilva/grunt-template-jasmine-templates.git"
   }
 }
