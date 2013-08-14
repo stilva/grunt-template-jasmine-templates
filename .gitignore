@@ -9,7 +9,6 @@ test/com/backbone/*
 .idea
 .project
 .htaccess
-.npmignore
 .gitignore
 .sass-cache
 .editorconfig
