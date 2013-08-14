@@ -1,1 +1,23 @@
+node_modules/*
+.grunt/*
+grunt/*
+app/*
+test/com/backbone/*
+
+*.iml
+
+.idea
+.project
+.htaccess
+.npmignore
+.gitignore
 .sass-cache
+.editorconfig
+.gitattributes
+
+# OS generated files #
+######################
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
