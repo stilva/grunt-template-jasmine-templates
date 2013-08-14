@@ -5,5 +5,8 @@
 .gitattributes
 .idea
 .grunt
+.git
 test
 docs
+
+_SpecRunner.html

@@ -1,6 +1,6 @@
 {
   "name": "grunt-template-jasmine-templates",
-  "version": "0.0.0-a",
+  "version": "0.0.0-c",
   "description": "Allows for javascript template engines to be used within jasmine",
   "keywords": [
     "grunt",

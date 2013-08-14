@@ -33,7 +33,7 @@ grunt.initConfig({
         template: require('grunt-template-jasmine-templates'),
         templateOptions: {
           vendor: 'vendor/**/*.js',
-          templates: 'src/**/*.tmpl'
+          template: 'src/**/*.tmpl'
         }
       }
     }

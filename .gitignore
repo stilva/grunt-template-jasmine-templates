@@ -4,6 +4,8 @@ grunt/*
 app/*
 test/com/backbone/*
 
+_SpecRunner.html
+
 *.iml
 
 .idea
